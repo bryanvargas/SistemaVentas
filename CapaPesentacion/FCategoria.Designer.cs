@@ -28,35 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.buscar_txt = new System.Windows.Forms.TextBox();
-            this.buscar_btn = new System.Windows.Forms.Button();
-            this.eliminar_btn = new System.Windows.Forms.Button();
-            this.imprimir_btn = new System.Windows.Forms.Button();
-            this.eliminar_ckb = new System.Windows.Forms.CheckBox();
-            this.total_lbl = new System.Windows.Forms.Label();
             this.listado_data = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.total_lbl = new System.Windows.Forms.Label();
+            this.eliminar_ckb = new System.Windows.Forms.CheckBox();
+            this.imprimir_btn = new System.Windows.Forms.Button();
+            this.eliminar_btn = new System.Windows.Forms.Button();
+            this.buscar_btn = new System.Windows.Forms.Button();
+            this.buscar_txt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.codigo_txt = new System.Windows.Forms.TextBox();
-            this.nombre_txt = new System.Windows.Forms.TextBox();
-            this.descripcion_txt = new System.Windows.Forms.TextBox();
-            this.nuevo_btn = new System.Windows.Forms.Button();
-            this.guardar_btn = new System.Windows.Forms.Button();
-            this.editar_btn = new System.Windows.Forms.Button();
             this.cancelar_btn = new System.Windows.Forms.Button();
+            this.editar_btn = new System.Windows.Forms.Button();
+            this.guardar_btn = new System.Windows.Forms.Button();
+            this.nuevo_btn = new System.Windows.Forms.Button();
+            this.descripcion_txt = new System.Windows.Forms.TextBox();
+            this.nombre_txt = new System.Windows.Forms.TextBox();
+            this.codigo_txt = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
+            this.mensaje_tt = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listado_data)).BeginInit();
+            this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,79 +102,6 @@
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(601, 306);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mantenimiento";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre";
-            // 
-            // buscar_txt
-            // 
-            this.buscar_txt.Location = new System.Drawing.Point(75, 24);
-            this.buscar_txt.Name = "buscar_txt";
-            this.buscar_txt.Size = new System.Drawing.Size(144, 20);
-            this.buscar_txt.TabIndex = 1;
-            // 
-            // buscar_btn
-            // 
-            this.buscar_btn.Location = new System.Drawing.Point(253, 24);
-            this.buscar_btn.Name = "buscar_btn";
-            this.buscar_btn.Size = new System.Drawing.Size(90, 23);
-            this.buscar_btn.TabIndex = 2;
-            this.buscar_btn.Text = "Buscar";
-            this.buscar_btn.UseVisualStyleBackColor = true;
-            // 
-            // eliminar_btn
-            // 
-            this.eliminar_btn.Location = new System.Drawing.Point(362, 24);
-            this.eliminar_btn.Name = "eliminar_btn";
-            this.eliminar_btn.Size = new System.Drawing.Size(90, 23);
-            this.eliminar_btn.TabIndex = 2;
-            this.eliminar_btn.Text = "&Eliminar";
-            this.eliminar_btn.UseVisualStyleBackColor = true;
-            // 
-            // imprimir_btn
-            // 
-            this.imprimir_btn.Location = new System.Drawing.Point(473, 24);
-            this.imprimir_btn.Name = "imprimir_btn";
-            this.imprimir_btn.Size = new System.Drawing.Size(90, 23);
-            this.imprimir_btn.TabIndex = 2;
-            this.imprimir_btn.Text = "&Imprimir";
-            this.imprimir_btn.UseVisualStyleBackColor = true;
-            // 
-            // eliminar_ckb
-            // 
-            this.eliminar_ckb.AutoSize = true;
-            this.eliminar_ckb.Location = new System.Drawing.Point(18, 77);
-            this.eliminar_ckb.Name = "eliminar_ckb";
-            this.eliminar_ckb.Size = new System.Drawing.Size(62, 17);
-            this.eliminar_ckb.TabIndex = 3;
-            this.eliminar_ckb.Text = "Eliminar";
-            this.eliminar_ckb.UseVisualStyleBackColor = true;
-            // 
-            // total_lbl
-            // 
-            this.total_lbl.AutoSize = true;
-            this.total_lbl.Location = new System.Drawing.Point(417, 81);
-            this.total_lbl.Name = "total_lbl";
-            this.total_lbl.Size = new System.Drawing.Size(35, 13);
-            this.total_lbl.TabIndex = 4;
-            this.total_lbl.Text = "label3";
-            // 
             // listado_data
             // 
             this.listado_data.AllowUserToAddRows = false;
@@ -193,6 +124,79 @@
             this.Eliminar.Name = "Eliminar";
             this.Eliminar.ReadOnly = true;
             // 
+            // total_lbl
+            // 
+            this.total_lbl.AutoSize = true;
+            this.total_lbl.Location = new System.Drawing.Point(417, 81);
+            this.total_lbl.Name = "total_lbl";
+            this.total_lbl.Size = new System.Drawing.Size(35, 13);
+            this.total_lbl.TabIndex = 4;
+            this.total_lbl.Text = "label3";
+            // 
+            // eliminar_ckb
+            // 
+            this.eliminar_ckb.AutoSize = true;
+            this.eliminar_ckb.Location = new System.Drawing.Point(18, 77);
+            this.eliminar_ckb.Name = "eliminar_ckb";
+            this.eliminar_ckb.Size = new System.Drawing.Size(62, 17);
+            this.eliminar_ckb.TabIndex = 3;
+            this.eliminar_ckb.Text = "Eliminar";
+            this.eliminar_ckb.UseVisualStyleBackColor = true;
+            // 
+            // imprimir_btn
+            // 
+            this.imprimir_btn.Location = new System.Drawing.Point(473, 24);
+            this.imprimir_btn.Name = "imprimir_btn";
+            this.imprimir_btn.Size = new System.Drawing.Size(90, 23);
+            this.imprimir_btn.TabIndex = 2;
+            this.imprimir_btn.Text = "&Imprimir";
+            this.imprimir_btn.UseVisualStyleBackColor = true;
+            // 
+            // eliminar_btn
+            // 
+            this.eliminar_btn.Location = new System.Drawing.Point(362, 24);
+            this.eliminar_btn.Name = "eliminar_btn";
+            this.eliminar_btn.Size = new System.Drawing.Size(90, 23);
+            this.eliminar_btn.TabIndex = 2;
+            this.eliminar_btn.Text = "&Eliminar";
+            this.eliminar_btn.UseVisualStyleBackColor = true;
+            // 
+            // buscar_btn
+            // 
+            this.buscar_btn.Location = new System.Drawing.Point(253, 24);
+            this.buscar_btn.Name = "buscar_btn";
+            this.buscar_btn.Size = new System.Drawing.Size(90, 23);
+            this.buscar_btn.TabIndex = 2;
+            this.buscar_btn.Text = "Buscar";
+            this.buscar_btn.UseVisualStyleBackColor = true;
+            // 
+            // buscar_txt
+            // 
+            this.buscar_txt.Location = new System.Drawing.Point(75, 24);
+            this.buscar_txt.Name = "buscar_txt";
+            this.buscar_txt.Size = new System.Drawing.Size(144, 20);
+            this.buscar_txt.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nombre";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(601, 306);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Mantenimiento";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cancelar_btn);
@@ -212,50 +216,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categorias";
             // 
-            // label3
+            // cancelar_btn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 38);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Codigo: ";
+            this.cancelar_btn.Location = new System.Drawing.Point(408, 242);
+            this.cancelar_btn.Name = "cancelar_btn";
+            this.cancelar_btn.Size = new System.Drawing.Size(75, 23);
+            this.cancelar_btn.TabIndex = 2;
+            this.cancelar_btn.Text = "Cancelar";
+            this.cancelar_btn.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // editar_btn
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Nombre: ";
+            this.editar_btn.Location = new System.Drawing.Point(286, 242);
+            this.editar_btn.Name = "editar_btn";
+            this.editar_btn.Size = new System.Drawing.Size(75, 23);
+            this.editar_btn.TabIndex = 2;
+            this.editar_btn.Text = "Editar";
+            this.editar_btn.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // guardar_btn
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 129);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Descripcion:";
+            this.guardar_btn.Location = new System.Drawing.Point(182, 242);
+            this.guardar_btn.Name = "guardar_btn";
+            this.guardar_btn.Size = new System.Drawing.Size(75, 23);
+            this.guardar_btn.TabIndex = 2;
+            this.guardar_btn.Text = "Guardar";
+            this.guardar_btn.UseVisualStyleBackColor = true;
+            this.guardar_btn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // codigo_txt
+            // nuevo_btn
             // 
-            this.codigo_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.codigo_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.codigo_txt.Location = new System.Drawing.Point(102, 31);
-            this.codigo_txt.Name = "codigo_txt";
-            this.codigo_txt.Size = new System.Drawing.Size(100, 20);
-            this.codigo_txt.TabIndex = 1;
-            // 
-            // nombre_txt
-            // 
-            this.nombre_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.nombre_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nombre_txt.Location = new System.Drawing.Point(102, 79);
-            this.nombre_txt.Name = "nombre_txt";
-            this.nombre_txt.Size = new System.Drawing.Size(272, 20);
-            this.nombre_txt.TabIndex = 1;
+            this.nuevo_btn.Location = new System.Drawing.Point(77, 242);
+            this.nuevo_btn.Name = "nuevo_btn";
+            this.nuevo_btn.Size = new System.Drawing.Size(75, 23);
+            this.nuevo_btn.TabIndex = 2;
+            this.nuevo_btn.Text = "Nuevo";
+            this.nuevo_btn.UseVisualStyleBackColor = true;
             // 
             // descripcion_txt
             // 
@@ -268,42 +264,58 @@
             this.descripcion_txt.Size = new System.Drawing.Size(272, 83);
             this.descripcion_txt.TabIndex = 1;
             // 
-            // nuevo_btn
+            // nombre_txt
             // 
-            this.nuevo_btn.Location = new System.Drawing.Point(77, 242);
-            this.nuevo_btn.Name = "nuevo_btn";
-            this.nuevo_btn.Size = new System.Drawing.Size(75, 23);
-            this.nuevo_btn.TabIndex = 2;
-            this.nuevo_btn.Text = "Nuevo";
-            this.nuevo_btn.UseVisualStyleBackColor = true;
+            this.nombre_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.nombre_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nombre_txt.Location = new System.Drawing.Point(102, 79);
+            this.nombre_txt.Name = "nombre_txt";
+            this.nombre_txt.Size = new System.Drawing.Size(272, 20);
+            this.nombre_txt.TabIndex = 1;
             // 
-            // guardar_btn
+            // codigo_txt
             // 
-            this.guardar_btn.Location = new System.Drawing.Point(182, 242);
-            this.guardar_btn.Name = "guardar_btn";
-            this.guardar_btn.Size = new System.Drawing.Size(75, 23);
-            this.guardar_btn.TabIndex = 2;
-            this.guardar_btn.Text = "Guardar";
-            this.guardar_btn.UseVisualStyleBackColor = true;
-            this.guardar_btn.Click += new System.EventHandler(this.button2_Click);
+            this.codigo_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.codigo_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.codigo_txt.Location = new System.Drawing.Point(102, 31);
+            this.codigo_txt.Name = "codigo_txt";
+            this.codigo_txt.Size = new System.Drawing.Size(100, 20);
+            this.codigo_txt.TabIndex = 1;
             // 
-            // editar_btn
+            // label5
             // 
-            this.editar_btn.Location = new System.Drawing.Point(286, 242);
-            this.editar_btn.Name = "editar_btn";
-            this.editar_btn.Size = new System.Drawing.Size(75, 23);
-            this.editar_btn.TabIndex = 2;
-            this.editar_btn.Text = "Editar";
-            this.editar_btn.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Descripcion:";
             // 
-            // cancelar_btn
+            // label4
             // 
-            this.cancelar_btn.Location = new System.Drawing.Point(408, 242);
-            this.cancelar_btn.Name = "cancelar_btn";
-            this.cancelar_btn.Size = new System.Drawing.Size(75, 23);
-            this.cancelar_btn.TabIndex = 2;
-            this.cancelar_btn.Text = "Cancelar";
-            this.cancelar_btn.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Nombre: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Codigo: ";
+            // 
+            // errorIcono
+            // 
+            this.errorIcono.ContainerControl = this;
+            // 
+            // mensaje_tt
+            // 
+            this.mensaje_tt.IsBalloon = true;
             // 
             // FCategoria
             // 
@@ -319,10 +331,11 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.listado_data)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,5 +367,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button cancelar_btn;
+        private System.Windows.Forms.ErrorProvider errorIcono;
+        private System.Windows.Forms.ToolTip mensaje_tt;
     }
 }
