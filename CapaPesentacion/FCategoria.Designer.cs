@@ -117,6 +117,8 @@
             this.listado_data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.listado_data.Size = new System.Drawing.Size(545, 186);
             this.listado_data.TabIndex = 5;
+            this.listado_data.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.listado_data_CellContentClick);
+            this.listado_data.DoubleClick += new System.EventHandler(this.listado_data_DoubleClick);
             // 
             // Eliminar
             // 
@@ -142,6 +144,7 @@
             this.eliminar_ckb.TabIndex = 3;
             this.eliminar_ckb.Text = "Eliminar";
             this.eliminar_ckb.UseVisualStyleBackColor = true;
+            this.eliminar_ckb.CheckedChanged += new System.EventHandler(this.eliminar_ckb_CheckedChanged);
             // 
             // imprimir_btn
             // 
@@ -160,6 +163,7 @@
             this.eliminar_btn.TabIndex = 2;
             this.eliminar_btn.Text = "&Eliminar";
             this.eliminar_btn.UseVisualStyleBackColor = true;
+            this.eliminar_btn.Click += new System.EventHandler(this.eliminar_btn_Click);
             // 
             // buscar_btn
             // 
@@ -226,6 +230,7 @@
             this.cancelar_btn.TabIndex = 2;
             this.cancelar_btn.Text = "Cancelar";
             this.cancelar_btn.UseVisualStyleBackColor = true;
+            this.cancelar_btn.Click += new System.EventHandler(this.cancelar_btn_Click);
             // 
             // editar_btn
             // 
@@ -235,6 +240,7 @@
             this.editar_btn.TabIndex = 2;
             this.editar_btn.Text = "Editar";
             this.editar_btn.UseVisualStyleBackColor = true;
+            this.editar_btn.Click += new System.EventHandler(this.editar_btn_Click);
             // 
             // guardar_btn
             // 
@@ -252,8 +258,9 @@
             this.nuevo_btn.Name = "nuevo_btn";
             this.nuevo_btn.Size = new System.Drawing.Size(75, 23);
             this.nuevo_btn.TabIndex = 2;
-            this.nuevo_btn.Text = "Nuevo";
+            this.nuevo_btn.Text = "&Nuevo";
             this.nuevo_btn.UseVisualStyleBackColor = true;
+            this.nuevo_btn.Click += new System.EventHandler(this.nuevo_btn_Click);
             // 
             // descripcion_txt
             // 
