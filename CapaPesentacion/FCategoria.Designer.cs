@@ -169,6 +169,7 @@
             this.buscar_btn.TabIndex = 2;
             this.buscar_btn.Text = "Buscar";
             this.buscar_btn.UseVisualStyleBackColor = true;
+            this.buscar_btn.Click += new System.EventHandler(this.buscar_btn_Click);
             // 
             // buscar_txt
             // 
@@ -176,6 +177,7 @@
             this.buscar_txt.Name = "buscar_txt";
             this.buscar_txt.Size = new System.Drawing.Size(144, 20);
             this.buscar_txt.TabIndex = 1;
+            this.buscar_txt.TextChanged += new System.EventHandler(this.buscar_txt_TextChanged);
             // 
             // label2
             // 
