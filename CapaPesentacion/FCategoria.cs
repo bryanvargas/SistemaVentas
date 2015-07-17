@@ -255,6 +255,7 @@ namespace CapaPesentacion
                             if (salida.Equals("OK"))
                             {
                                 this.MensajeOk("Se elimino correctamente el registro");
+                                eliminar_ckb.Checked= false;
                             }
                             else
                             {
