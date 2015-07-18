@@ -49,7 +49,7 @@ namespace CapaDato
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "spmostrar_presentacion";
+                cmd.CommandText = "spinsertar_presentacion";
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter id_presentacion = new SqlParameter();
